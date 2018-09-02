@@ -7,3 +7,7 @@ datamodel: datamodel.graphql
 
 # Can only access the API with this JWT secret
 secret: mysecret123
+
+hooks:
+  post-deploy:
+    - graphql get-schema --project-database
