@@ -68,9 +68,14 @@ function post(parent, args, context, info) {
   }, info);
 }
 
+function deleteLink(parent, args, context, info) {
+  return context.db.mutation.deleteLink({ where: { id: args.linkId } }, info);
+}
+
 module.exports = {
   signup,
   login,
   post,
-  vote
+  vote,
+  deleteLink
 };
