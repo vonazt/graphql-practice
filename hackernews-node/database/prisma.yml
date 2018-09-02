@@ -1,0 +1,9 @@
+# The http endpoint for the prisma API
+#endpoint: ''
+endpoint: https://eu1.prisma.sh/richardtzanov-38ba04/test-graphql/dev
+
+#Points to the file that holds the data model
+datamodel: datamodel.graphql
+
+# Can only access the API with this JWT secret
+secret: mysecret123

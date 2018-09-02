@@ -1,5 +1,6 @@
 type Link {
-  id: ID!
+  id: ID! @unique
+  createdAt: DateTime!
   description: String!
   url: String!
 }
